@@ -1,17 +1,16 @@
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FaFacebook, FaGithub, FaInstagram } from "react-icons/fa6";
-
-const profileImage = "src/assets/images/profileImage.png";
+import profileImage from "../assets/images/profileImage.png";
 const AboutMe = () => {
   return (
     <>
       <section className="min-h-screen about-section bg-[#0B1221] text-white py-16 flex items-center justify-center relative">
         <div className="container mx-auto px-4 pt-6 flex flex-col md:flex-row items-center gap-8 justify-center relative">
-          <div className="content max-w-3xl">
-            <h2 className="text-[#4ECCA3] text-5xl font-bold mb-6">
+          <div className="content max-w-3xl order-2 md:order-1">
+            <h2 className="text-[#4ECCA3] text-3xl md:text-5xl font-bold mb-6">
               WHO I AM?
             </h2>
-            <p className="text-lg leading-relaxed ">
+            <p className="text-sm text-justify md:text-left md:text-lg leading-relaxed ">
               Experienced Web Developer with over four years of expertise in
               designing and developing high quality websites and web
               applications. Proficient in building dynamic, user-friendly
@@ -31,11 +30,9 @@ const AboutMe = () => {
                 href="https://www.linkedin.com/in/swapnilahmedshishir/"
                 target="_blank"
               >
-                {/* <i className="bx bxl-linkedin"></i> */}
                 <FaLinkedin />
               </a>
               <a href="https://twitter.com/shishir_swapnil" target="_blank">
-                {/* <i className="bx bxl-twitter"></i> */}
                 <FaTwitter />
               </a>
               <a href="https://github.com/swapnilahmedshishir" target="_blank">
@@ -55,9 +52,9 @@ const AboutMe = () => {
               </a>
             </div>
           </div>
-          <div className="home_img image-container">
+          <div className="home_img image-container order-1 md:order-2">
             <img
-              className="w-[35vw] rounded-lg object-cover shadow-lg"
+              className="md:w-[35vw] rounded-lg object-cover shadow-lg"
               src={profileImage}
               alt="profileImage"
             />

@@ -273,3 +273,9 @@ pre[class*="language-"] {
   color: #323946;
   box-shadow: 0 0 1rem #4ECCA3;
 }
+
+@media (max-width: 700px) {
+  .social_media a {
+    margin: 1.5rem 0.5rem 1rem 0;
+  }
+}
