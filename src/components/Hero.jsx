@@ -59,7 +59,7 @@ const profile = {
     name: 'Swapnil Ahmmed Shishir',
     title: 'Front End Developer| Full-Stack Developer | Problem Solver',
     skills: [
-        'React', 'NextJS', 'Redux', 'Express',
+        'React', 'NextJS', 'Redux', 'Node.js', 'Express',
         'MySQL', 'MongoDB','Git',
     ],
     hardWorker: true,

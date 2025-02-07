@@ -1,6 +1,7 @@
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FaFacebook, FaGithub, FaInstagram } from "react-icons/fa6";
 import profileImage from "../assets/images/profileImage.png";
+
 const AboutMe = () => {
   return (
     <>
@@ -10,53 +11,89 @@ const AboutMe = () => {
             <h2 className="text-[#4ECCA3] text-3xl md:text-5xl font-bold mb-6">
               WHO I AM?
             </h2>
-            <p className="text-sm text-justify md:text-left md:text-lg leading-relaxed ">
-              Experienced Web Developer with over four years of expertise in
-              designing and developing high quality websites and web
-              applications. Proficient in building dynamic, user-friendly
-              interfaces using React.js and JavaScript, ensuring seamless user
-              experiences. Strong background in front end development, with a
-              focus on responsive design, performance optimization, and modern
-              web technologies. Successfully delivered numerous projects by
-              collaborating with cross functional teams to meet client
-              requirements and exceed expectations. Dedicated to staying updated
-              with the latest industry trends and continuously enhancing skills
-              to provide cutting edge solutions. Proactive problem solver with a
-              keen eye for detail and a commitment to on time project delivery.
+            <p className="text-sm text-justify md:text-left md:text-lg leading-relaxed">
+              Hey there! I'm{" "}
+              <span className="text-[#4ECCA3] font-semibold">
+                Shopnil Ahmed
+              </span>
+              , a passionate web developer with a strong love for technology and
+              innovation. My programming journey started with curiosity about
+              how websites work, and over the years, it has transformed into a
+              full-time passion.
+              <br />
+              <br />I specialize in building high-performance, user-friendly web
+              applications using{" "}
+              <span className="font-semibold text-[#4ecca2b6]">
+                React.js, JavaScript, Node.js, MongoDB, and MySQL
+              </span>
+              . Whether it's crafting sleek UI components, optimizing
+              performance, or integrating back-end services, I thrive on
+              delivering top-notch solutions.
+              <br />
+              <br />
+              Beyond coding, I enjoy{" "}
+              <span className="font-semibold text-[#4ecca2b6]">
+                exploring new tech trends, solving complex problems, and
+                collaborating with teams
+              </span>{" "}
+              to bring ideas to life. I'm also a strong believer in continuous
+              learning and staying updated with the latest industry
+              advancements.
+              <br />
+              <br />
+              When I’m not coding, you’ll find me{" "}
+              <span className="font-semibold text-[#4ecca2b6]">
+                playing football, gaming, or exploring new places
+              </span>
+              . I also enjoy sharing knowledge through tech blogs and mentoring
+              aspiring developers. Let's connect and build something amazing
+              together! 🚀
             </p>
 
-            <div className="social_media">
+            <div className="social_media flex gap-4 mt-6">
               <a
                 href="https://www.linkedin.com/in/swapnilahmedshishir/"
                 target="_blank"
+                className="text-[#4ECCA3] text-2xl"
               >
                 <FaLinkedin />
               </a>
-              <a href="https://twitter.com/shishir_swapnil" target="_blank">
+              <a
+                href="https://twitter.com/shishir_swapnil"
+                target="_blank"
+                className="text-[#4ECCA3] text-2xl"
+              >
                 <FaTwitter />
               </a>
-              <a href="https://github.com/swapnilahmedshishir" target="_blank">
+              <a
+                href="https://github.com/swapnilahmedshishir"
+                target="_blank"
+                className="text-[#4ECCA3] text-2xl"
+              >
                 <FaGithub />
               </a>
               <a
                 href="https://www.facebook.com/swapnilahmedshishir/"
                 target="_blank"
+                className="text-[#4ECCA3] text-2xl"
               >
                 <FaFacebook />
               </a>
               <a
                 href="https://www.instagram.com/shishirswapnil/"
                 target="_blank"
+                className="text-[#4ECCA3] text-2xl"
               >
                 <FaInstagram />
               </a>
             </div>
           </div>
+
           <div className="home_img image-container order-1 md:order-2">
             <img
               className="md:w-[35vw] rounded-lg object-cover shadow-lg"
               src={profileImage}
-              alt="profileImage"
+              alt="Shopnil Ahmed Profile"
             />
           </div>
 
