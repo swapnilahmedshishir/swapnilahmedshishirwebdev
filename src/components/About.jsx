@@ -6,6 +6,7 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import { FiArrowRight } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const AboutMe = () => {
   return (
@@ -276,13 +277,13 @@ const AboutMe = () => {
 
             {/* CTA Button */}
             <div className="mt-8">
-              <a
-                href="#contact"
+              <Link
+                to={"/contact"}
                 className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-teal-500 to-emerald-500 text-white font-medium rounded-lg hover:from-teal-600 hover:to-emerald-600 transition-all group"
               >
                 Get In Touch
                 <FiArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

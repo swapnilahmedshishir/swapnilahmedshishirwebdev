@@ -13,6 +13,7 @@ import {
   Star,
   Target,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 // Enhanced IconCloud Component with 3D effect
 const IconCloud = ({ iconSlugs, onIconHover }) => {
@@ -434,7 +435,7 @@ const SkillsSection = () => {
   };
 
   return (
-    <main className="pt-20 lg:pt-0 bg-gradient-to-br from-[#0B1221] to-[#131C30] text-white min-h-screen overflow-hidden relative">
+    <main className="pt-20 lg:pt-10 bg-gradient-to-br from-[#0B1221] to-[#131C30] text-white min-h-screen overflow-hidden relative">
       {/* Animated background elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-teal-500/5 rounded-full blur-3xl animate-pulse-slow"></div>
@@ -532,17 +533,19 @@ const SkillsSection = () => {
           <p className="text-gray-400 mb-8 text-lg">
             Ready to bring your vision to life with cutting-edge technology?
           </p>
-          <motion.button
-            whileHover={{ scale: 1.05, y: -2 }}
-            whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 rounded-xl bg-gradient-to-r from-teal-500 to-blue-500 text-white font-medium text-lg relative overflow-hidden group"
-          >
-            <span className="relative z-10 flex items-center gap-2">
-              Start a Project
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </span>
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-teal-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </motion.button>
+          <Link to={"https://wa.me/8801766882298"} target="_blank">
+            <motion.button
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-8 py-4 rounded-xl bg-gradient-to-r from-teal-500 to-blue-500 text-white font-medium text-lg relative overflow-hidden group"
+            >
+              <span className="relative z-10 flex items-center gap-2">
+                Start a Project
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </span>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-teal-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </motion.button>
+          </Link>
         </motion.div>
       </section>
     </main>

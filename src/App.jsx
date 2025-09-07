@@ -9,6 +9,7 @@ import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import { Route, Routes } from "react-router-dom";
 import AboutMe from "./components/About";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 export default function App() {
   const [isOnePage] = useState(false);
@@ -39,6 +40,9 @@ export default function App() {
           <Route path="/projects" element={<Projects />} />
         </Routes>
       )}
+
+      {/* WhatsApp Floating Button */}
+      <WhatsAppButton />
     </>
   );
 }
