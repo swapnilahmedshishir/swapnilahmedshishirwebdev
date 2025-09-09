@@ -30,7 +30,11 @@ import {
 } from "lucide-react";
 
 import TojoGlobal from "../assets/images/TojoGlobal.png";
+import TsGeoSystemWebsite from "../assets/images/Ts-Geosystem-hero-part.png";
+import TsGeoSystemDashbord from "../assets/images/TS-Geosystems-Bangladesh.png";
+import TojoNews from "../assets/images/Tojonews-homepage.png";
 import AmazinDataFilterApplication from "../assets/images/AmazinDataFilterApplication.png";
+import AdvocateManagementSystem from "../assets/images/AdvocateManagementSystem.jpg";
 import crowdcubeapplication from "../assets/images/crowdcubeapplication.png";
 import NewsHubApplication from "../assets/images/NewsHubApplication.png";
 import { Link } from "react-router-dom";
@@ -164,14 +168,14 @@ const ProjectCard = ({ project, index, isExpanded, onToggle }) => {
           </div>
 
           {/* Featured Badge */}
-          <div className="absolute top-4 left-4">
+          {/* <div className="absolute top-4 left-4">
             <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 backdrop-blur-sm">
               <Sparkles className="w-3 h-3 text-cyan-400" />
               <span className="text-cyan-300 text-xs font-medium">
                 Featured
               </span>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Project Content */}
@@ -328,10 +332,10 @@ const ProjectShowcase = () => {
 
   const projects = [
     {
-      title: "TOJO Global Agency Website & Admin Dashboard",
+      title: "TOJO Global - Digital Marketing Agency Platform",
       description: [
-        "A comprehensive digital marketing platform built with cutting-edge technologies. Developed a scalable solution for agency services including web development, blockchain solutions, and page moderation.",
-        "Implemented secure backend systems with Express and MySQL, ensuring efficient data handling and API integrations. Created a fully responsive design optimized for all devices using modern UI libraries.",
+        "A full-stack platform for a premier digital marketing agency, featuring a public-facing website and a powerful admin dashboard. The website showcases services in web development, blockchain, and digital marketing, while the dashboard enables internal teams to manage content, users, and analytics.",
+        "Engineered a robust and scalable backend with Node.js and Express, featuring secure RESTful APIs and efficient MySQL data management. The frontend delivers a dynamic, engaging user experience with advanced animations and a fully responsive, SEO-optimized design.",
       ],
       tags: [
         "React",
@@ -349,20 +353,130 @@ const ProjectShowcase = () => {
       },
       image: TojoGlobal,
       features: [
-        "Responsive design for all devices",
-        "Secure admin dashboard with role-based access",
-        "Real-time data visualization",
-        "SEO-optimized performance",
-        "Multi-language support",
-        "Advanced analytics integration",
+        "Fully Responsive & SEO-Optimized Design",
+        "Secure Admin Dashboard with Role-Based Access Control (RBAC)",
+        "Real-Time Analytics & Data Visualization",
+        "Multi-Language & Localization Support",
+        "High-Performance Animations (GSAP & AOS)",
+        "RESTful API Architecture with Secure Authentication",
       ],
-      categories: ["frontend", "backend", "database", "design"],
+      categories: [
+        "Full-Stack",
+        "Frontend",
+        "Backend",
+        "Database",
+        "UI/UX Design",
+      ],
     },
     {
-      title: "Amazing Data Filter Admin Dashboard",
+      title: "TS Geosystems - E-Commerce Store",
       description: [
-        "A comprehensive data-filtering web application for efficient client data management. Users can add, update, delete, and search client information using various criteria including name, mobile number, and location.",
-        "Built with a focus on user experience and data security. Features advanced search capabilities and intuitive data management tools.",
+        "A complete e-commerce solution for a geosystems equipment supplier, enabling online sales of specialized devices and systems. The platform features a comprehensive product catalog, secure checkout, and order management.",
+        "Built a custom shopping cart, integrated SSLCommerz for secure payment processing, and implemented advanced product search and filtering to enhance the customer journey and drive conversions.",
+      ],
+      tags: [
+        "React",
+        "Node.js",
+        "MySQL",
+        "Express",
+        "Axios",
+        "AOS",
+        "Tailwind CSS",
+      ],
+      links: {
+        github: "https://github.com/swapnilahmedshishir",
+        demo: "https://ts-geosystems.com.bd/",
+      },
+      image: TsGeoSystemWebsite,
+      features: [
+        "Secure Payment Gateway Integration (SSLCommerz)",
+        "Advanced Product Search & Dynamic Routing",
+        "Shopping Cart & Order Management System",
+        "Fully Responsive Tailwind CSS Design",
+        "SEO-Optimized Product Pages & Metadata",
+        "Admin Notification System for New Orders",
+      ],
+      categories: [
+        "Full-Stack",
+        "Frontend",
+        "Backend",
+        "Database",
+        "E-Commerce",
+      ],
+    },
+    {
+      title: "TS Geosystems - Admin & Order Management Dashboard",
+      description: [
+        "A sophisticated admin dashboard for managing the TS Geosystems e-commerce platform. Provides complete control over products, orders, customers, and site content through a role-based interface.",
+        "Features comprehensive CRUD operations, sales analytics, traffic reporting, and a rich text editor for dynamic content management, empowering administrators to efficiently run the entire business operation.",
+      ],
+      tags: [
+        "React",
+        "Node.js",
+        "MySQL",
+        "Express",
+        "Multer",
+        "Text Editor",
+        "Axios",
+        "Tailwind CSS",
+      ],
+      links: {
+        github: "https://github.com/swapnilahmedshishir",
+        demo: "https://ts-geosystems.com.bd/admin/login",
+      },
+      image: TsGeoSystemDashbord,
+      features: [
+        "Role-Based Admin Access Control",
+        "Complete Product & Inventory Management (CRUD)",
+        "Sales & Traffic Analytics Dashboard",
+        "Order Fulfillment & Status Tracking",
+        "Dynamic Content Management with Rich Text Editor",
+        "Image Upload & Management with Multer",
+      ],
+      categories: [
+        "Full-Stack",
+        "Frontend",
+        "Backend",
+        "Database",
+        "Admin Panel",
+      ],
+    },
+    {
+      title: "TOJO News - Modern News Portal",
+      description: [
+        "A dynamic news publication website built with Next.js for superior SEO and performance. Covers marketing, daily life, and blockchain news, featuring sponsored content, newsletter subscriptions, and real-time updates.",
+        "Leveraged Next.js's server-side rendering (SSR) and static site generation (SSG) for lightning-fast page loads and top search engine rankings. Integrated third-party news APIs to enrich content offerings.",
+      ],
+      tags: [
+        "NextJS",
+        "Node.js",
+        "MySQL",
+        "Express",
+        "Axios",
+        "AOS",
+        "GSAP",
+        "Tailwind CSS",
+      ],
+      links: {
+        github: "https://github.com/swapnilahmedshishir",
+        demo: "https://tojonews.netlify.app",
+      },
+      image: TojoNews,
+      features: [
+        "Next.js for Optimal SEO & Performance (SSR/SSG)",
+        "Newsletter Subscription Management",
+        "Third-Party News API Integration",
+        "Sponsor & Advertisement Management",
+        "Category-Based Article Filtering",
+        "Modern Animations for Enhanced Storytelling",
+      ],
+      categories: ["Full-Stack", "Frontend", "Backend", "Database", "SEO"],
+    },
+    {
+      title: "Amazing Data Filter - Client Management System",
+      description: [
+        "A specialized web application designed for efficient client data management. It allows users to perform advanced searches, filter records by various criteria (name, mobile, location), and manage client information with full CRUD functionality.",
+        "Built with a strong focus on data integrity and security, featuring JWT authentication, Formik for robust form handling, and a clean, intuitive interface for complex data operations.",
       ],
       tags: ["React", "MySQL", "Node.js", "Formik", "Axios", "Express", "JWT"],
       links: {
@@ -372,20 +486,54 @@ const ProjectShowcase = () => {
       },
       image: AmazinDataFilterApplication,
       features: [
-        "Advanced search and filtering system",
-        "Real-time data validation",
-        "Role-based access control",
-        "Data export capabilities",
-        "Audit trail functionality",
-        "Bulk operations support",
+        "Advanced Multi-Criteria Search & Filtering",
+        "Secure JWT Authentication & Authorization",
+        "Robust Form Handling & Validation with Formik",
+        "Data Export Functionality (e.g., CSV, Excel)",
+        "Audit Trail for Data Changes",
+        "Bulk Data Operations & Management",
       ],
-      categories: ["frontend", "backend", "database"],
+      categories: [
+        "Full-Stack",
+        "Frontend",
+        "Backend",
+        "Database",
+        "Data Management",
+      ],
     },
     {
-      title: "Crowdcube Winter Donation Website",
+      title: "Advocate Law Firm - Case Management System",
       description: [
-        "A modern crowdfunding platform built with React, Node.js, MongoDB, and Firebase. Offers responsive design, dynamic campaign management, secure transactions, and real-time notifications.",
-        "Hosted on Firebase and Vercel for optimal reliability and scalability. Features include user authentication, payment processing, and campaign analytics.",
+        "A comprehensive dashboard solution for a law firm to streamline its operations. Manages cases, client data, appointments, important deadlines, and document storage in a centralized, secure system.",
+        "Automates client notifications for case updates and court dates, reducing administrative overhead and improving communication between advocates and their clients.",
+      ],
+      tags: ["React", "MySQL", "Node.js", "Formik", "Axios", "Express", "JWT"],
+      links: {
+        github: "https://github.com/swapnilahmedshishir",
+        demo: "https://upadmin.masteritsolution.com.bd/",
+      },
+      image: AdvocateManagementSystem,
+      features: [
+        "Centralized Case & Client Database",
+        "Appointment Scheduling & Calendar Integration",
+        "Document Management & Secure File Storage",
+        "Automated Client Notification System (SMS/Email)",
+        "Role-Based Access for Partners & Associates",
+        "Deadline & Task Tracking with Reminders",
+      ],
+      categories: [
+        "Full-Stack",
+        "Frontend",
+        "Backend",
+        "Database",
+        "Business SaaS",
+      ],
+    },
+    {
+      title: "Crowdcube Winter - Donation & Crowdfunding Platform",
+      description: [
+        "A feature-rich crowdfunding platform that allows users to create and donate to campaigns for various causes. Built with a modern tech stack for reliability and a seamless user experience.",
+        "Implemented secure payment processing, real-time donation tracking, and social sharing features to maximize campaign reach and engagement. Hosted on Firebase and Vercel for high availability.",
       ],
       tags: [
         "React",
@@ -404,20 +552,20 @@ const ProjectShowcase = () => {
       },
       image: crowdcubeapplication,
       features: [
-        "Secure payment processing",
-        "Real-time campaign updates",
-        "User authentication system",
-        "Campaign analytics dashboard",
-        "Social sharing integration",
-        "Email notifications",
+        "Secure Stripe/PayPal Payment Gateway Integration",
+        "Real-Time Campaign Progress Updates",
+        "User Authentication via Firebase Auth",
+        "Campaign Creator Dashboard with Analytics",
+        "Social Media Sharing Integration",
+        "Email Notifications for Donors & Creators",
       ],
-      categories: ["frontend", "backend", "database", "design"],
+      categories: ["Full-Stack", "Frontend", "Backend", "Database", "Firebase"],
     },
     {
-      title: "NewsHub Application",
+      title: "NewsHub - Premium Content Subscription Platform",
       description: [
-        "A modern news platform offering premium and free content with real-time updates. Features dynamic article management, user subscriptions, and personalized content recommendations.",
-        "Built with React, MongoDB, and Firebase for seamless performance. Includes admin dashboard for content management and user analytics.",
+        "A modern news aggregator and subscription platform offering both free and premium articles. Features a personalized feed, content recommendations, and a seamless payment system for subscriptions.",
+        "Utilized React Query for efficient server-state management and caching, ensuring a fast and responsive user interface. Includes a powerful admin panel for content editors to publish and manage articles.",
       ],
       tags: [
         "React",
@@ -434,14 +582,20 @@ const ProjectShowcase = () => {
       },
       image: NewsHubApplication,
       features: [
-        "Premium content subscription system",
-        "Real-time article updates",
-        "Personalized user recommendations",
-        "Admin content management",
-        "Search and categorization",
-        "Social media integration",
+        "Tiered Subscription Model with Recurring Payments",
+        "Personalized Content Feed & Recommendations",
+        "Advanced State Management with React Query",
+        "Admin CMS for Article Publishing",
+        "Advanced Search, Tags, and Categories",
+        "User Profile & Reading History",
       ],
-      categories: ["frontend", "backend", "database", "design"],
+      categories: [
+        "Full-Stack",
+        "Frontend",
+        "Backend",
+        "Database",
+        "Subscription SaaS",
+      ],
     },
   ];
 

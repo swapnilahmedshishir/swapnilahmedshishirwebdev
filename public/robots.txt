@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://swapnilahmedshishirwebdev.netlify.app/.netlify/functions/sitemap

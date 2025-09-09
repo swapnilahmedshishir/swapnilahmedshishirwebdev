@@ -1,19 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Swapnil Ahmmed Shishir</title>
-    <link
-      rel="shortcut icon"
-      href="./src/assets/images/fav.png"
-      type="image/x-icon"
-    />
-  </head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./src/assets/images/fav.png" />
 
+    <!-- Essential SEO Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#2563eb" />
+    <meta
+      name="description"
+      content="Swapnil Ahmed Shishir | Best MERN Stack & SaaS Web Developer from Bangladesh. Building fast, modern, and scalable web applications and SaaS products. Available for freelance projects."
+    />
+    <meta
+      name="keywords"
+      content="swapnil ahmed shishir, front end web developer, full stack web developer, bangladesh best web developer, software web developer in bangladesh, mern stack web developer in bangladesh, mern developer, freelancer in bangladesh, freelancer, saas product, saas developer, saas website developer, react developer, node.js developer"
+    />
+    <meta name="author" content="Swapnil Ahmed Shishir" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook Meta Tags (for Social Sharing) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://swapnilahmedshishirwebdev.netlify.app/"
+    />
+    <meta
+      property="og:title"
+      content="Swapnil Ahmed Shishir | MERN Stack & SaaS Developer"
+    />
+    <meta
+      property="og:description"
+      content="Full Stack Web Developer from Bangladesh specializing in the MERN stack and building cutting-edge SaaS products."
+    />
+    <meta
+      property="og:image"
+      content="https://swapnilahmedshishirwebdev.netlify.app/og-image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_BD" />
+
+    <!-- Twitter Meta Tags -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://swapnilahmedshishirwebdev.netlify.app/"
+    />
+    <meta
+      property="twitter:title"
+      content="Swapnil Ahmed Shishir | MERN Stack & SaaS Developer"
+    />
+    <meta
+      property="twitter:description"
+      content="Full Stack Web Developer from Bangladesh specializing in the MERN stack and building cutting-edge SaaS products."
+    />
+    <meta
+      property="twitter:image"
+      content="https://swapnilahmedshishirwebdev.netlify.app/og-image.png"
+    />
+    <meta property="twitter:creator" content="@yourtwitterhandle" />
+
+    <!-- Canonical URL (Very Important to avoid duplicate content) -->
+    <link
+      rel="canonical"
+      href="https://swapnilahmedshishirwebdev.netlify.app/"
+    />
+
+    <!-- Sitemap -->
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- JSON-LD Structured Data (BEST for AI and Google Search) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Swapnil Ahmed Shishir",
+        "url": "https://swapnilahmedshishirwebdev.netlify.app",
+        "image": "https://swapnilahmedshishirwebdev.netlify.app/logo.png",
+        "jobTitle": "Full Stack Web Developer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Freelance"
+        },
+        "description": "MERN Stack and SaaS Web Developer based in Bangladesh with 4+ years of experience in JavaScript, React.js, Node.js, and building complete web applications.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "BD"
+        },
+        "knowsAbout": [
+          "Web Development",
+          "SaaS Development",
+          "MERN Stack",
+          "React.js",
+          "Node.js",
+          "MongoDB",
+          "Express.js",
+          "JavaScript",
+          "TypeScript",
+          "Next.js",
+          "MySQL",
+          "REST APIs",
+          "Frontend Development",
+          "Backend Development"
+        ],
+        "hasCredential": "BSc in Computer Science & Engineering",
+        "sameAs": [
+          "https://github.com/swapnilahmedshishir",
+          "https://www.linkedin.com/in/yourprofile/",
+          "https://twitter.com/yourprofile"
+        ]
+      }
+    </script>
+
+    <title>Swapnil Ahmed Shishir | MERN Stack & SaaS Web Developer</title>
+
+    <style>
+      /* Critical CSS to improve loading performance */
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+          "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+          "Helvetica Neue", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: #0f172a;
+        color: #f8fafc;
+      }
+
+      #root {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      .loading-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 5px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        border-top-color: #3b82f6;
+        animation: spin 1s ease-in-out infinite;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .loading-text {
+        font-size: 1.2rem;
+        color: #94a3b8;
+      }
+    </style>
+  </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <noscript>
+      <div
+        style="
+          padding: 20px;
+          text-align: center;
+          background: #f1f5f9;
+          color: #0f172a;
+        "
+      >
+        <h1>JavaScript Required</h1>
+        <p>
+          You need to enable JavaScript to run this application. This is a
+          modern React.js portfolio that requires JavaScript functionality.
+        </p>
+      </div>
+    </noscript>
+
+    <div id="root">
+      <div class="loading-container">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">Loading Portfolio...</div>
+      </div>
+    </div>
+
+    <script>
+      // Simple loading animation that will be replaced by React
+      console.log("Swapnil Ahmed Shishir - Portfolio Website Loading");
+
+      // Performance monitoring
+      window.addEventListener("load", function () {
+        const loadTime = performance.now();
+        console.log(`Page fully loaded in ${loadTime} milliseconds`);
+      });
+    </script>
   </body>
 </html>

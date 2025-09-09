@@ -100,8 +100,8 @@ const developer = {
 
   const downloadFile = () => {
     const link = document.createElement("a");
-    link.href = "/cv/SWAPNIL_AHMMED_SHISHIR_WEB_DEVELOPER_CV .pdf";
-    link.download = "SWAPNIL_AHMMED_SHISHIR_WEB_DEVELOPER_CV .pdf";
+    link.href = "/cv/MERNStackwebDeveloper_SwapnilAhmmedShishir_resume.pdf";
+    link.download = "MERNStackwebDeveloper_SwapnilAhmmedShishir_resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
