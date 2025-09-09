@@ -33,7 +33,7 @@ const SocailMediaPart = () => {
         <FaFacebook />
       </a>
       <a
-        href="https://www.instagram.com/shishirswapnil/"
+        href="https://www.instagram.com/swapnilahmedshishir/"
         target="_blank"
         className="text-[#4ECCA3] text-2xl"
       >

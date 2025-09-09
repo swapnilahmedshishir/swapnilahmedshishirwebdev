@@ -1,6 +1,6 @@
 // netlify/functions/sitemap/sitemap.js
 
-import generateSitemap from "@/setup/sitemapGenerator";
+import generateSitemap from "../../../src/setup/sitemapGenerator";
 
 export const handler = async (event, context) => {
   const sitemap = generateSitemap();
