@@ -266,7 +266,7 @@ const AboutMe = () => {
                   <FaFacebook />
                 </a>
                 <a
-                  href="https://www.instagram.com/shishirswapnil/"
+                  href="https://www.instagram.com/swapnilahmedshishir/"
                   target="_blank"
                   className="text-2xl p-2 bg-[#152436] rounded-lg text-teal-400 hover:text-teal-300 hover:bg-teal-500/10 transition-colors"
                 >
