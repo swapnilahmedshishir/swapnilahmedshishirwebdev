@@ -32,7 +32,7 @@ import {
 import TojoGlobal from "../assets/images/TojoGlobal.png";
 import TsGeoSystemWebsite from "../assets/images/Ts-Geosystem-hero-part.png";
 import TsGeoSystemDashbord from "../assets/images/TS-Geosystems-Bangladesh.png";
-import TojoNews from "../assets/images/Tojonews-homepage.png";
+import TojoNews from "../assets/images/TojoNews_homepage.png";
 import AmazinDataFilterApplication from "../assets/images/AmazinDataFilterApplication.png";
 import AdvocateManagementSystem from "../assets/images/AdvocateManagementSystem.jpg";
 import crowdcubeapplication from "../assets/images/crowdcubeapplication.png";
