@@ -174,6 +174,17 @@ const AboutMe = () => {
             {/* Passion & Goal */}
             <div className="mb-10 p-6 bg-gradient-to-r from-teal-900/20 to-emerald-900/20 rounded-xl border border-teal-500/20">
               <h3 className="text-xl font-semibold text-teal-300 mb-3">
+                🚀 Why you hire me?
+              </h3>
+              <p className="text-gray-300">
+             I can quickly learn new things and apply them in practical situations, which is very important in today’s fast-paced environment. I understand client requirements clearly, plan projects effectively, and come up with new ideas and solutions through deep thinking.
+             
+             I do have weaknesses, but instead of worrying about them, I always focus on improving and finding better solutions. If I am not evaluated differently from others, how will I get the opportunity to prove myself?
+              </p>
+            </div>
+            {/* Passion & Goal */}
+            <div className="mb-10 p-6 bg-gradient-to-r from-teal-900/20 to-emerald-900/20 rounded-xl border border-teal-500/20">
+              <h3 className="text-xl font-semibold text-teal-300 mb-3">
                 🚀 My Passion & Goal
               </h3>
               <p className="text-gray-300">
